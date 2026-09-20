@@ -16,8 +16,7 @@ api_version = "2026-07"
   topics = [ "app/uninstalled" ]
 
 [auth]
-redirect_urls = [ "https://chinapass.onrender.com/api/auth/callback" ]
+redirect_urls = [ "https://chinapass.onrender.com/auth/callback", "https://chinapass.onrender.com/auth/shopify/callback" ]
 
 [build]
-include_config_on_deploy = true
 automatically_update_urls_on_dev = true
