@@ -2,7 +2,7 @@
 client_id = "0dce9a73d4a5e8536ff17c7c446d5273"
 name = "ChinaPass"
 handle = "chinapass"
-application_url = "https://chinapass.example.com"
+application_url = "https://chinapass.onrender.com"
 embedded = true
 
 [access_scopes]
@@ -16,7 +16,7 @@ api_version = "2026-07"
   topics = [ "app/uninstalled" ]
 
 [auth]
-redirect_urls = [ "https://chinapass.example.com/api/auth/callback" ]
+redirect_urls = [ "https://chinapass.onrender.com/api/auth/callback" ]
 
 [build]
 include_config_on_deploy = true
