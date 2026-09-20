@@ -1,0 +1,23 @@
+# Shopify App 配置（完整 App 脚手架，链接到现有 SinoSync app）
+client_id = "0dce9a73d4a5e8536ff17c7c446d5273"
+name = "ChinaPass"
+handle = "chinapass"
+application_url = "https://chinapass.example.com"
+embedded = true
+
+[access_scopes]
+scopes = "read_orders"
+
+[webhooks]
+api_version = "2026-07"
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/uninstalled"
+  topics = [ "app/uninstalled" ]
+
+[auth]
+redirect_urls = [ "https://chinapass.example.com/api/auth/callback" ]
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true

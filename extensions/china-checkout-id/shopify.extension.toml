@@ -1,0 +1,14 @@
+# ChinaPass Checkout UI Extension 配置
+# 使用通用区块靶点（block），以便在结算编辑器的 Apps 列表里拖拽激活；
+# 组件内部仍用 useShippingAddress() 判断国家，非中国时渲染空。
+api_version = "2026-07"
+
+[[extensions]]
+type = "ui_extension"
+name = "ChinaPass Checkout ID"
+handle = "china-checkout-id"
+uid = "63f2dbe9-e533-2c6e-39e1-a66e586a76954dea4bca"
+
+[[extensions.targeting]]
+module = "./src/Checkout.tsx"
+target = "purchase.checkout.block.render"
